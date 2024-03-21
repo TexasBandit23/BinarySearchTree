@@ -1,3 +1,4 @@
+//imports
 #ifndef NODE_H
 #define NODE_H
 #include <iostream>
@@ -6,18 +7,14 @@ using namespace std;
 
 class Node {
 public:
+    //variables for nodes
     int data;
     Node* left;
     Node* right;
+    //constructor and destructor 
     Node(int val);
     ~Node();
+    //no prototypes needed as no methods used in node.cpp
 };
-
-/*
-void add(Node*& node, int value);
-void remove(Node*& node, int value);
-bool search(Node* node, int value);
-void print(Node* node, int count);
-*/
 
 #endif // NODE_H
